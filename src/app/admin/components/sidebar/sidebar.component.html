@@ -1,0 +1,92 @@
+
+<div
+class="side-bar d-flex flex-column flex-shrink-0 p-4 bg-dark text-white"
+style="width: 280px "
+>
+
+
+
+<div class="sidebar-header">
+  <!-- <img src="./assets/image 2.png" height="80px" width="80px" alt="" /> -->
+
+  <h5 style="text-align: center">Admin Panel</h5>
+</div>
+
+<hr />
+<ul class="nav nav-pills flex-column mb-auto">
+  
+  <div class="accordion " id="taxCollectionAccordion">
+    <div class="accordion-item ">
+      <h2 class="accordion-header" id="headingThree">
+        <button
+          class="accordion-button text-dark collapsed"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#Utilities"
+          aria-expanded="false"
+          aria-controls="collapseThree"
+        >
+         
+          <span class="menu text-white">Manage Posts</span>
+        </button>
+      </h2>
+      <div
+        id="Utilities"
+        class="accordion-collapse collapse"
+        aria-labelledby="headingThree"
+        data-bs-parent="#taxCollectionAccordion"
+      >
+        <div class="accordion-body">
+          <li class="nav-item" routerLink="./posts" routerLinkActive="active">
+            
+            <a class="nav-link " style="cursor: pointer;text-indent: 10px;">
+            
+              <span style="font-size: .9rem;">All Posts Profile</span>
+            </a>
+          </li>
+          <li class="nav-item"  routerLink="./add-posts" routerLinkActive="active">
+            
+            <a class="nav-link " style="text-indent: 10px;cursor: pointer;">
+            
+              <span style="font-size: .9rem;">Add Posts </span>
+            </a>
+          </li>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <li routerLink="./records" routerLinkActive="active">
+    <a  class="nav-link ">
+      
+      <span class="menu">Logs</span>
+    </a>
+  </li>
+  <li routerLink="./records" routerLinkActive="active">
+    <a  class="nav-link ">
+      
+      <span class="menu">Settings</span>
+    </a>
+  </li>
+  
+
+</ul>
+<hr>
+<div class="dropdown">
+  <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+    <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2">
+    <strong>Admin</strong>
+  </a>
+  <ul class="dropdown-menu dropdown-menu-dark text-small shadow" aria-labelledby="dropdownUser1">
+   
+ 
+    <li><a class="dropdown-item" href="#">Profile</a></li>
+    <li><hr class="dropdown-divider"></li>
+    <li><a class="dropdown-item" >Sign out</a></li>
+  </ul>
+</div>
+
+
+</div>
+

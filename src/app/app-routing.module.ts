@@ -30,6 +30,11 @@ const routes: Routes = [
     path:'contact-us',
     component:ContactComponent
   },
+  {
+    path:'admin',
+    loadChildren:()=>import('./admin/modules/admin-module/admin-module.module').then(m=>m.AdminModuleModule)
+   
+  },
 
 
   {

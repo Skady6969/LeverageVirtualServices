@@ -10,6 +10,10 @@ import { ServicesComponent } from './pages/services/services.component';
 import { PortfolioComponent } from './pages/portfolio/portfolio.component';
 import { AboutUsComponent } from './pages/about-us/about-us.component';
 import { ContactComponent } from './pages/contact/contact.component';
+import { TestimonialComponent } from './components/testimonial/testimonial.component';
+import { SwiperModule } from 'swiper/angular';
+import { DashboardComponent } from './admin/pages/dashboard/dashboard.component';
+import { SettingsComponent } from './admin/pages/settings/settings.component';
 
 @NgModule({
   declarations: [
@@ -20,11 +24,16 @@ import { ContactComponent } from './pages/contact/contact.component';
     ServicesComponent,
     PortfolioComponent,
     AboutUsComponent,
-    ContactComponent
+    ContactComponent,
+    TestimonialComponent,
+    DashboardComponent,
+    SettingsComponent,
+    
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    SwiperModule
   ],
   providers: [],
   bootstrap: [AppComponent]
