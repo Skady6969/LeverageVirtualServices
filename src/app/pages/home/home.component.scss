@@ -1,0 +1,225 @@
+.landing{
+    background:linear-gradient(rgba(0, 0, 0, 0.497),rgba(0, 0, 0, 0.526)), url('/assets/images/home-land.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    padding-top: 80px;
+}
+
+.landing .text-wrapper h1{
+    color: var(--yellow);
+    font-size: 5.5vw;
+    font-weight: bolder;
+    text-shadow: 2px 2px #0000006c;
+}
+
+.landing .lev img{
+  height: auto;
+  width: 100%;
+}
+
+
+.adsheader {
+    text-align: center;
+    display: grid;
+    place-items: center;
+}
+
+.adsheader h1{
+    position: relative;
+    width: max-content;
+    padding: 1;
+}
+
+.adsheader h1::after{
+    content: "";
+    display: block;
+    background-color: var(--yellow);
+    width: 100%;
+    height: 5px;
+    margin-top: 1px;
+    border-radius: 5px;
+}
+
+
+.ads{
+    padding-top: 12em;
+    padding-bottom: 12em;
+
+
+    img{
+
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+}
+
+
+.onboard {
+
+    min-height: 50vh;
+    background-color: #F5F4F4;
+    padding-top: 5em;
+    padding-bottom: 5em;
+    position: relative;
+}
+.onboard .col{
+    padding-top: 2rem;
+
+}
+
+.onboard .col h4 {
+    text-align: center;
+    font-weight: 600;
+}
+
+.onboard .col p{
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 18px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.custom-shape-divider-top-1649129848 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1649129848 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 90px;
+}
+
+.custom-shape-divider-top-1649129848 .shape-fill {
+    fill: #ffffff;
+}
+
+
+
+
+
+.consult {
+    min-height: 5vh;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    background-size: cover;
+    background-color: #222;
+
+
+}
+
+.consult .col{
+    padding-top: 1rem;
+    place-content: center;
+    padding-left: 4rem;
+}
+
+.consult .col h4{
+    color: var(--yellow);
+    text-align: center;
+    font-weight: 600;
+    font-size: 32px;
+}
+
+.consult .col p{
+    color:  black;
+    font-size: 1.25rem;
+    font-weight: 300;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    text-align: left;
+    text-justify: inter-word;
+}
+
+
+.sect6{
+    padding-top: 200px;
+    padding-bottom: 200px;
+    position: relative;
+    background: #F5F4F4;
+
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow-x: hidden;
+
+}
+.sect6 .mat-card{
+        background-color: white;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        border-radius: 5px;
+        padding: 2rem;
+        text-align: center;
+
+    }
+.mat-card h2{
+            color: var(--yellow);
+        }
+
+        .connect{
+            background-color: var(--yellow);
+            padding-top: 100px;
+            padding-bottom: 100px;
+            /* min-height: 50vh; */
+        }
+
+        .connect .frame{
+            background-color: white;
+
+        }
+
+        .connect .text-wrapper h1{
+
+                font-size: 4.7vw;
+                color: white;
+                font-weight: 200;
+                line-height: 4.7vw;
+
+
+
+        }
+
+        .connect .text-wrapper p{
+            margin-top: 30px;
+            font-size: 1.05vw;
+            color: rgb(255, 255, 255);
+            font-weight: 200;
+
+            font-style: italic;
+        }
+
+        .connect .text-wrapper h1 span{
+            font-weight: 600;
+            position: relative;
+
+    }
+
+    .connect .text-wrapper h1 span::after{
+
+
+            content: '';
+            position: absolute;
+            margin-top: 10px;
+
+
+            width: 90%;
+            height: 3vw;
+            background: #cccccc;
+            bottom: 0;
+            z-index: -1;
+            left: 0;
+            transition: all .5s;
+
+
+}

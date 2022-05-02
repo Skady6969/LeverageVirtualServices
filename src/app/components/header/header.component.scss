@@ -1,0 +1,52 @@
+
+
+
+.navbar{
+    height: 80px;
+
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+
+
+
+}
+.bg-semi-dark{
+    background-color:#222222;
+
+}
+.menu{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+
+
+    margin: 0;
+
+    li{
+        a{
+            text-decoration: none;
+
+            color: white;
+            text-transform: uppercase;
+            font-weight: 500;
+
+
+
+            &:hover{
+                color: #fbc91c;
+            }
+        }
+
+    }
+
+}
+.active {
+  li {
+    a {
+      color: #fbc91c;
+    }
+  }
+}
+

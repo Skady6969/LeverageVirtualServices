@@ -1,0 +1,122 @@
+.ads{
+  padding-top: 12em;
+  padding-bottom: 12em;
+
+
+  img{
+
+      &:hover{
+          transform: scale(1.1);
+      }
+  }
+}
+.adsheader {
+  text-align: center;
+  display: grid;
+  place-items: center;
+}
+
+.adsheader h1{
+  position: relative;
+  width: max-content;
+  margin-bottom: 80px;
+  font-size: 36px;
+  font-weight: bolder;
+}
+
+.adsheader h1::after{
+  content: "";
+  display: block;
+  background-color: var(--yellow);
+  width: 100%;
+  min-height: 5px;
+  margin-top: 1px;
+  border-radius: 5px;
+}
+
+.banner{
+  background: linear-gradient(to left,rgba(0, 0, 0, 0.466) ,rgba(0, 0, 0, 0.678)) , url("/assets/images/banner.jpg");
+  background-size: cover;
+  padding-top: 10em;
+  padding-bottom: 5em;
+  background-position: center;
+  background-position-y: -700px;
+  position: relative;
+  min-height: 50vh;
+}
+
+
+.banner .container .text{
+  text-align: center;
+  color: white;
+  font-size: 18px;
+}
+
+
+.banner .container .text h1{
+  color: #fbc91c;
+  font-size: 48px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bolder;
+  z-index: 1000;
+  margin-top: 100px ;
+}
+
+
+
+.banner .container .text .custom-btn:hover{
+  background-color: #fbc91c;
+}
+
+
+
+.aboutserv{
+  background-color: #f5f4f4;
+  padding-top: 12em;
+  padding-bottom: 12em;
+}
+
+.aboutserv .container h1{
+  padding-top: 2rem;
+  display: flex;
+  justify-content: center;
+  font-weight: bolder;
+  font-size: 48px;
+  height: 120px;
+  font-size: 64px;
+
+}
+
+.aboutserv .container p{
+  font-size: 14px;
+  justify-content: center;
+  padding-left: 2rem;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+
+}
+.services{
+  padding-top: 12em;
+  padding-bottom: 12em;
+}
+
+.services .list{
+  margin-bottom: 20px;
+  margin-left: 150px;
+
+}
+
+.services .list h3{
+  color: #fbc91c;
+}
+
+.services .list ul{
+  list-style: circle;
+
+}
+
+.services .list ul li{
+  font-size: 18px;
+  font-weight: 400;
+}
