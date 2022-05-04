@@ -1,24 +1,51 @@
 /* You can add global styles to this file, and also import other style files */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 @import 'swiper/scss';
 @import 'swiper/scss/navigation';
 @import 'swiper/scss/pagination';
 
 
 
+
 :root {
   --yellow: #fbc91c;
+  --brown:#3b2414;
+  --lightgrey:#bbbdc1;
+  --darkgrey: #7f8484;
+  --blue:#0188DF;
+  --black:#354046;
 }
+
+::-webkit-scrollbar{
+  width: 8px;
+}
+::-webkit-scrollbar-track{
+  box-shadow: inset 0 0 10px rgb(211, 211, 211);
+
+}
+::-webkit-scrollbar-thumb{
+  background-color: rgb(117, 117, 117);
+  border-radius: 8px;
+
+}
+::-webkit-scrollbar-thumb:hover{
+  background-color: rgb(155, 155, 155);
+  opacity: 1;
+}
+
 * {
   font-family: "Poppins", sans-serif;
-  padding: 0;
+  padding: 0 ;
   margin: 0;
-
+  outline: none !important;
+  text-decoration: none !important;
   transition: all 0.4s;
 }
 
 body {
   position: relative;
+  overflow-x: hidden;
 }
 
 
