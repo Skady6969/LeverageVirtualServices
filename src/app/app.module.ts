@@ -14,6 +14,7 @@ import { TestimonialComponent } from './components/testimonial/testimonial.compo
 import { SwiperModule } from 'swiper/angular';
 import { DashboardComponent } from './admin/pages/dashboard/dashboard.component';
 import { SettingsComponent } from './admin/pages/settings/settings.component';
+import { Portfolio1Component } from './pages/portfolio1/portfolio1.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { SettingsComponent } from './admin/pages/settings/settings.component';
     TestimonialComponent,
     DashboardComponent,
     SettingsComponent,
+    Portfolio1Component,
     
   ],
   imports: [

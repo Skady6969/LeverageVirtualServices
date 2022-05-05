@@ -56,6 +56,18 @@
     }
 }
 
+.btn{
+  min-height: auto;
+}
+
+.btn:hover {
+  color: white;
+
+}
+.landing .lev img:hover{
+  transform: translateY(-10%);
+}
+
 
 .onboard {
 

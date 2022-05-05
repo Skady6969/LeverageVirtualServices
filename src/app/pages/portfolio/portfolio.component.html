@@ -43,38 +43,37 @@
           <div class="section-body">
 
               <div class="grid">
-                 <div class="grid-item logo">
+                 <div *ngFor="let item of obj" class="grid-item logo webdev">
                      <div class="gallery-image">
-                         <img src="assets/images/Sam 1.png" alt="">
+                         <img src="{{item.img}}" alt="">
                          <div class="img-overlay">
                              <div class="plus"></div>
                              <div class="img-description">
-                                 <h3>Agoncillo RPT</h3>
-                                 <a  href="#"class="btn" style="color: black;">View Project</a>
+                                 <h3>{{item.project_title}}</h3>
+                                 <a (click)="openproject(item.id)" class="btn" style="color: black;">View Project</a>
                              </div>
                          </div>
                      </div>
-                 </div>
-                 <div class="grid-item webdev">
+              </div>
+                 <!-- <div class="grid-item webdev">
                   <div class="gallery-image">
                       <img src="assets/img/port3.jpg" alt="">
                       <div class="img-overlay">
                           <div class="plus"></div>
                           <div class="img-description">
                               <h3>Project Name</h3>
-                              <a href="#" class="btn" style="color: black;">View Project</a>
+                              <a (click)="openproject(2)" class="btn" style="color: black;">View Project</a>
                           </div>
                       </div>
                   </div>
-                 </div>
-                 <div class="grid-item ui webdev">
-                  <div class="gallery-image">
+                 </div> -->
+                   <!-- <div class="gallery-image">
                       <img src="assets/img/port4.jpg" alt="">
                       <div class="img-overlay">
                           <div class="plus"></div>
                           <div class="img-description">
                               <h3>Project Name</h3>
-                              <a href="#" class="btn" style="color: black;">View Project</a>
+                              <a (click)="openproject(3)" class="btn" style="color: black;">View Project</a>
                           </div>
                       </div>
                   </div>
@@ -86,7 +85,7 @@
                           <div class="plus"></div>
                           <div class="img-description">
                               <h3>Project Name</h3>
-                              <a href="#" class="btn" style="color: black;">View Project</a>
+                              <a (click)="openproject(4)" class="btn" style="color: black;">View Project</a>
                           </div>
                       </div>
                   </div>
@@ -98,7 +97,7 @@
                           <div class="plus"></div>
                           <div class="img-description">
                               <h3>Project Name</h3>
-                              <a href="#" class="btn" style="color: black;">View Project</a>
+                              <a (click)="openproject(5)" class="btn" style="color: black;">View Project</a>
                           </div>
                       </div>
                   </div>
@@ -110,14 +109,11 @@
                           <div class="plus"></div>
                           <div class="img-description">
                               <h3>Project Name</h3>
-                              <a href="#" class="btn" style="color: black;">View Project</a>
+                              <a (click)="openproject(6)" class="btn" style="color: black;">View Project</a>
                           </div>
                       </div>
                   </div>
-                 </div>
-
-
-
+                 </div> -->
               </div>
           </div>
           <div class="more-folio">
@@ -154,21 +150,20 @@
           </div>
 
           <div class="section-body">
-
-              <div class="grid">
-                 <div class="grid-item logo">
-                     <div class="gallery-image">
-                         <img src="assets/img/port2.jpg" alt="">
-                         <div class="img-overlay">
-                             <div class="plus"></div>
-                             <div class="img-description">
-                                 <h3>Project Name</h3>
-                                 <a href="#" class="btn" style="color: black;">View Project</a>
-                             </div>
-                         </div>
-                     </div>
-                 </div>
-                 <div class="grid-item webdev">
+            <div class="grid">
+              <div *ngFor="let item of obj2" class="grid-item logo webdev">
+                  <div class="gallery-image">
+                      <img src="{{item.img}}" alt="">
+                      <div class="img-overlay">
+                          <div class="plus"></div>
+                          <div class="img-description">
+                              <h3>{{item.project_title}}</h3>
+                              <a (click)="openproject(item.id)" class="btn" style="color: black;">View Project</a>
+                          </div>
+                      </div>
+                  </div>
+           </div>
+                 <!-- <div class="grid-item webdev">
                   <div class="gallery-image">
                       <img src="assets/img/port3.jpg" alt="">
                       <div class="img-overlay">
@@ -227,7 +222,7 @@
                           </div>
                       </div>
                   </div>
-                 </div>
+                 </div> -->
 
 
 

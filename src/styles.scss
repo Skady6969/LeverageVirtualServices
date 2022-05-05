@@ -41,11 +41,15 @@
   outline: none !important;
   text-decoration: none !important;
   transition: all 0.4s;
+  box-sizing: border-box;
+
 }
 
 body {
   position: relative;
   overflow-x: hidden;
 }
+
+
 
 

@@ -27,26 +27,101 @@
     li{
         a{
             text-decoration: none;
-
-            color: white;
             text-transform: uppercase;
             font-weight: 500;
-
-
-
+            color: white;
             &:hover{
                 color: #fbc91c;
             }
         }
+        .active {
+          color: #fbc91c;
+    }
 
     }
 
 }
-.active {
-  li {
-    a {
-      color: #fbc91c;
-    }
+
+
+nav .menu-btn{
+  display: none;
+}
+@media(max-width:1100px){
+  .navbar{
+      justify-content: space-between;
+      height: 65px;
+
+  }
+  .navbar .menu{
+      display: none;
+      position: absolute;
+      top: 65px;
+      left: 0px;
+      background-color: #454545	;
+      border-bottom: 4px solid #fffb02;
+      width:100%;
+      text-align: center;
+  }
+  .navbar .menu li{
+      width:100%;
+      list-style: none;
+      margin-bottom: 5px;
+      margin-top: 5px;
+  }
+  .navbar .menu li a{
+      width:100%;
+      height: 40px;
+      margin:0px;
+      padding: 25px;
+      border:1px solid rgba(38,38,38,0.03);
+
+  }
+  .navbar .menu-icon{
+      cursor: pointer;
+      float: right;
+      padding: 28px 20px;
+      position: relative;
+      user-select: none;
+  }
+  .navbar .menu-icon .nav-icon{
+      background-color: #333333;
+      display: block;
+      height: 2px;
+      position: relative;
+      transition: background 0.2s ease-out;
+      width:18px;
+  }
+  .navbar .menu-icon .nav-icon:before,
+  .navbar .menu-icon .nav-icon:after{
+      background: #333333;
+      content: '';
+      display: block;
+      height: 100%;
+      position: absolute;
+      transition: all ease-out 0.2s;
+      width:100%;
+  }
+  .navbar .menu-icon .nav-icon:before{
+      top: 5px;
+  }
+  .navbar .menu-icon .nav-icon:after{
+      top:-5px;
+  }
+  .navbar .menu-btn:checked ~ .menu-icon .nav-icon{
+      background: transparent;
+  }
+  .navbar .menu-btn:checked ~ .menu-icon .nav-icon:before{
+      transform: rotate(-45deg);
+      top: 0;
+  }
+  .navbar .menu-btn:checked ~ .menu-icon .nav-icon:after{
+      transform: rotate(45deg);
+      top: 0;
+  }
+  .navbar .menu-btn{
+      display: none;
+  }
+  .navbar .menu-btn:checked ~ .menu{
+      display: block;
   }
 }
-
