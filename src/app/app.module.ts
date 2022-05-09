@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
@@ -15,6 +15,9 @@ import { SwiperModule } from 'swiper/angular';
 import { DashboardComponent } from './admin/pages/dashboard/dashboard.component';
 import { SettingsComponent } from './admin/pages/settings/settings.component';
 import { Portfolio1Component } from './pages/portfolio1/portfolio1.component';
+import { SendComponent } from './send/send.component';
+
+
 
 @NgModule({
   declarations: [
@@ -30,12 +33,14 @@ import { Portfolio1Component } from './pages/portfolio1/portfolio1.component';
     DashboardComponent,
     SettingsComponent,
     Portfolio1Component,
-    
+    SendComponent,
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    SwiperModule
+    SwiperModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

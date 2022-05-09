@@ -38,7 +38,7 @@ const routes: Routes = [
   },
 
   {
-    path:'portfolio1/:id ',
+    path:'portfolio1/:id',
     component:Portfolio1Component
   },
 

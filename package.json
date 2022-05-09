@@ -18,6 +18,8 @@
     "@angular/platform-browser": "~13.3.0",
     "@angular/platform-browser-dynamic": "~13.3.0",
     "@angular/router": "~13.3.0",
+    "@emailjs/browser": "^3.6.2",
+    "emailjs": "^4.0.0",
     "firebase": "^9.6.11",
     "rxjs": "~7.5.0",
     "swiper": "^8.1.4",

@@ -1,7 +1,9 @@
+
+
 <app-header></app-header>
 
 <section class = "contact-section">
-  <div class = "contact-bg">
+  <div class = "contact-bg" id="5">
     <h3>Get in Touch with Us</h3>
     <h2 style="color: #ffcb09; font-weight: bolder;">contact us</h2>
     <div class = "line">
@@ -48,15 +50,15 @@
 
       <form>
         <div>
-          <input type = "text" class = "form-control" placeholder="First Name">
-          <input type = "text" class = "form-control" placeholder="Last Name">
+          <input type = "text" class = "form-control" placeholder="First Name" name="firstname" [(ngModel)]="firstname">
+          <input type = "text" class = "form-control" placeholder="Last Name" name="lastname" [(ngModel)]="lastname">
         </div>
         <div>
-          <input type = "email" class = "form-control" placeholder="E-mail">
-          <input type = "text" class = "form-control" placeholder="Phone">
+          <input type = "email" class = "form-control" placeholder="E-mail" name="email" [(ngModel)]="email">
+          <input type = "text" class = "form-control" placeholder="Phone" name="phone" [(ngModel)]="phone">
         </div>
-        <textarea rows = "5" placeholder="Message" class = "form-control"></textarea>
-        <input type = "submit" class = "send-btn" value = "send message">
+        <textarea rows = "5" placeholder="Message" class = "form-control" name="message" [(ngModel)]="message"></textarea>
+        <button type = "submit" class = "send-btn" (click)="onSubmit()">Send Message</button>
       </form>
 
       <div class="container">

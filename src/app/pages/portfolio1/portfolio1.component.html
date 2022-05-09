@@ -1,1 +1,38 @@
-<p>portfolio1 works!</p>
+<app-header></app-header>
+
+<div *ngFor="let dataset of filtered_obj">
+
+
+  <div class="container" class="works">
+    <div class="title">
+      <h1 style="color: black; text-align: center; justify-content: center; text-transform: uppercase; padding-top: 7rem;
+      padding-bottom: 5rem;">{{dataset.project_title}}</h1>
+    </div>
+    <div class="container">
+      <div  id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div  *ngFor="let pics of dataset.img | slice:1:2" class="carousel-item active">
+            <img src="{{pics}}" class="d-block w-100" alt="..." >
+          </div>
+          <div *ngFor="let pics of dataset.img | slice:2:dataset.img.length" class="carousel-item">
+            <img src="{{pics}}" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <button routerLink="/portfolio" routerLinkActive="active" class="btn custom-btn" style="background-color: var(--yellow);">Back</button>
+    </div>
+  </div>
+
+
+
+</div>
+
+<app-footer></app-footer>

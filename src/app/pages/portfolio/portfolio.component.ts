@@ -49,20 +49,20 @@ export class PortfolioComponent implements OnInit {
     obj2= [
       {
         'id': 7 ,
-        'project_title': "title7" ,
-        'img': "assets/img/port1.jpg" ,
+        'project_title': "DOMAIN" ,
+        'img': "assets/DOMAIN/5.png" ,
       },
 
       {
         'id': 8 ,
-        'project_title': "title8" ,
-        'img': "assets/img/port2.jpg" ,
+        'project_title': "GAIA SQUARE" ,
+        'img': "assets/gaia SQUARE/2.png" ,
       },
 
       {
         'id': 9 ,
-        'project_title': "title9" ,
-        'img': "assets/img/port3.jpg" ,
+        'project_title': "VEGO SQUARE" ,
+        'img': "assets/vego/1.png" ,
       },
 
       {
