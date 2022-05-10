@@ -17,33 +17,33 @@ export class PortfolioComponent implements OnInit {
 
     {
       'id': 2 ,
-      'project_title': "title2" ,
-      'img': "assets/img/port3.jpg" ,
+      'project_title': "No File" ,
+      'img': "assets/image/nofile.png" ,
     }
     ,
 
     {
       'id': 3 ,
-      'project_title': "title3" ,
-      'img': "assets/img/port4.jpg" ,
+      'project_title': "No File" ,
+      'img': "assets/image/nofile.png" ,
     },
 
     {
       'id': 4 ,
-      'project_title': "title4" ,
-      'img': "assets/img/port2.jpg" ,
+      'project_title': "No File" ,
+      'img': "assets/image/nofile.png" ,
     },
 
     {
       'id': 5 ,
-      'project_title': "title5" ,
-      'img': "assets/img/port5.jpg" ,
+      'project_title': "No File" ,
+      'img': "assets/image/nofile.png" ,
     },
 
     {
       'id': 6 ,
-      'project_title': "title6" ,
-      'img': "assets/img/port6.jpg" ,
+      'project_title': "No File" ,
+      'img':"assets/image/nofile.png" ,
     },]
 
     obj2= [
@@ -67,20 +67,20 @@ export class PortfolioComponent implements OnInit {
 
       {
         'id': 10 ,
-        'project_title': "title10" ,
-        'img': "assets/img/port4.jpg" ,
+        'project_title': "No File" ,
+        'img': "assets/image/nofile.png" ,
       },
 
       {
         'id': 11 ,
-        'project_title': "title11" ,
-        'img': "assets/img/port5.jpg" ,
+        'project_title': "No File" ,
+        'img': "assets/image/nofile.png" ,
       },
 
       {
         'id': 12 ,
-        'project_title': "title12" ,
-        'img': "assets/img/port6.jpg" ,
+        'project_title': "No File" ,
+        'img': "assets/image/nofile.png" ,
       }
 
     ]
@@ -92,6 +92,12 @@ export class PortfolioComponent implements OnInit {
   constructor(private router:Router) { }
 
   ngOnInit(): void {
+    window.scroll(
+      {
+        top:0,
+        left:0,
+      }
+    )
   }
 
   openproject(id:any){
